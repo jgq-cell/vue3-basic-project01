@@ -1,9 +1,28 @@
-# 启动项目
+# 1、项目描述
 
-1. npm install
-2. npm run dev
+框架：vue3+element-plus
+技术：mock 模拟后端数据、axios 请求数据
+基本思路：
+① 创建项目并做项目配置（git 管理, prettier+eslint 代码格式规范配置, @别名路径联想）
+② 按需导入 element-plus
+③ 实现列表查询、删除、编辑功能
 
-# 接口说明
+# 2、创建项目
+
+npm init vue@latest
+
+选择需要安装的依赖:
+
+```
+- Peoject name: xxx
+- Vue Router: yes
+- ESLint: yes
+```
+
+安装所有依赖：npm install  
+启动项目：npm run dev
+
+# 3、接口说明
 
 ## 获取列表
 
@@ -22,6 +41,6 @@ axios.delete(`/del/${id}`)
 ```javascript
 axios.patch(`/edit/${id}`, {
   name: '姓名',
-  place: '籍贯',
+  place: '籍贯'
 })
 ```
